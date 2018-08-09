@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+}
+body{
+    max-height: 100vh;
+}
+h1{
+    text-align: center;
+    font-size: 100px;
+    
+}
+.profile{
+    margin-top: 10vh;
+}

@@ -1,0 +1,14 @@
+#splash {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	/*display: none; TIRAR essa linha na versao FINAL*/
+}
+
+#main{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	/*display: none;  ALTERAR NA VERSAO FINAÇ*/
+	background-color: yellow;	
+}

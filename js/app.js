@@ -3,7 +3,7 @@ $(document).ready(function(){
 	//setDisplayFlex();  //
 
 	$('#btn-match').click( function(){ 
-		$('#match-movie').css("display","block"); 	
+		$('#match-movie').css("display","flex"); 	
 		$('main').css("display","none");
 		$('#friend-page').css("display","none");
 

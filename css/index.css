@@ -100,14 +100,12 @@ h1 {
 	margin-bottom: 10px;
 }
 #match-movie {
-margin: 10px;
-	width: 100%;
-	display: none;
+	margin: 10px;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
 #match-movie button {
-	background-color: yellow;
 	margin-top: 100px; 
 }
 

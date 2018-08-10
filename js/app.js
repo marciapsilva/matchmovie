@@ -98,9 +98,11 @@ function showMoviesPosters(array) {
     $.ajax(settings).done(function (response) {
       var posterContainer = document.createElement('div');
       var posterImg = response.poster_path;
-      var imgTag = '<img class="" src="https://image.tmdb.org/t/p/w100_and_h100_bestv2/' + posterImg + '">';
+      /* var imgTag = '<img class="" src="https://image.tmdb.org/t/p/w100_and_h100_bestv2/' + posterImg + '">'; */
+      var imgTag = $('<img>').attr('src', 'https://image.tmdb.org/t/p/w100_and_h100_bestv2/' + posterImg).addClass('movie-poster').data(response);
       $(posterContainer).append(imgTag);
       $('#match-movie').append(posterContainer);
+      modalContent();
     });
   }
 }
@@ -126,9 +128,11 @@ function showMyMovies(array) {
     $.ajax(settings).done(function (response) {
       var posterContainer = document.createElement('div');
       var posterImg = response.poster_path;
-      var imgTag = '<img class="" src="https://image.tmdb.org/t/p/w100_and_h100_bestv2/' + posterImg + '">';
+      /* var imgTag = '<img class="" src="https://image.tmdb.org/t/p/w100_and_h100_bestv2/' + posterImg + '">'; */
+      var imgTag = $('<img>').attr('src', 'https://image.tmdb.org/t/p/w100_and_h100_bestv2/' + posterImg).addClass('my-movie-row-poster').data(response);
       $(posterContainer).append(imgTag);
       $('#my-movie-list').append(posterContainer);
+      modalContent();
     });
   }
 }
@@ -150,9 +154,40 @@ function showMyFriendsMovies(array) {
     $.ajax(settings).done(function (response) {
       var posterContainer = document.createElement('div');
       var posterImg = response.poster_path;
-      var imgTag = '<img class="" src="https://image.tmdb.org/t/p/w100_and_h100_bestv2/' + posterImg + '">';
+      /* var imgTag = '<img class="" src="https://image.tmdb.org/t/p/w100_and_h100_bestv2/' + posterImg + '">'; */
+      var imgTag = $('<img>').attr('src', 'https://image.tmdb.org/t/p/w100_and_h100_bestv2/' + posterImg).addClass('my-movie-row-poster').data(response);
       $(posterContainer).append(imgTag);
       $('#friends-movie-list').append(posterContainer);
+      modalContent();
     });
   }
+}
+
+function modalContent() {
+  $('.movie-poster').each(function() {
+  $(this).click(function() {
+    $('#info-modal').modal('show');
+    $('.modal-title').html($(this).data('title'));
+    $('.modal-poster').html($(this));
+    $('.modal-description').html($(this).data('overview'));
+  });
+  });
+
+  $('.my-movie-row-poster').each(function() {
+  $(this).click(function() {
+    $('#info-modal').modal('show');
+    $('.modal-title').html($(this).data('title'));
+    $('.modal-poster').html($(this));
+    $('.modal-description').html($(this).data('overview'));
+  });
+  });
+
+  $('.my-friend-movie-row-poster').each(function() {
+  $(this).click(function() {
+    $('#info-modal').modal('show');
+    $('.modal-title').html($(this).data('title'));
+    $('.modal-poster').html($(this));
+    $('.modal-description').html($(this).data('overview'));
+  });
+  });
 }

@@ -21,9 +21,6 @@ h1 {
 
 main {
 	border: solid;
-}
-
-main {
   width: 100%;
 	position: absolute;
 	/*display: none;  ALTERAR NA VERSAO FINAÇ*/
@@ -48,7 +45,7 @@ main {
 /* div com botao de amigos e sua lista */
 .list-name, .your-friends {
 	background-color: #00D9FF;
-    padding: 10px;
+  padding: 10px;
 	border-radius: 5px;
 	font-size: 20px;
 	color: white;
@@ -65,14 +62,9 @@ main {
 /* section com amigos proximos */
 .close-friends {
 	display: grid;
-    justify-content: center;
+  justify-content: center;
 	grid-template-rows: 60px 200px 70px;
 	padding: 20px;
-}
-
-h1 {
-  text-align: center;
-  font-size: 100px; 
 }
 
 #btn-match {
@@ -85,7 +77,6 @@ h1 {
 }
 
 #match-movie {
-	border: solid;
 	height: 250px;
 	width: 100%;
 	display: none;
@@ -107,4 +98,14 @@ h1 {
 
 .modal-description {
 	margin: 10px;
+}
+
+#my-movie-list {
+	display: none;
+	background-color: orange;
+}
+
+#friends-movie-list {
+	display: none;
+	background-color: pink;
 }

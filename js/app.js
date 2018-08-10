@@ -2,6 +2,17 @@ $(document).ready(function(){
 	//splash();
 	//setDisplayFlex();  //
 
+	$('#btn-match').click( function(){ 
+		$('#match-movie').css("display","block"); 	
+  	$('main').css("display","none");
+	});
+	
+
+	$('.btn-back').click( function(){ 
+		$('main').css("display","block"); 
+		$('#match-movie').css("display","none"); 
+	});
+
 })
 
 function splash(){

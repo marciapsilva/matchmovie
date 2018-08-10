@@ -20,9 +20,25 @@ h1{
 	display: none; /*TIRAR essa linha na versao FINAL*/
 }
 
-main{
+#main{
 	height: 100%;
 	width: 100%;
 	position: absolute;
 	/*display: none;  ALTERAR NA VERSAO FINAÇ*/
+}
+
+main {
+	border: solid;
+}
+
+#match-movie{
+	border: solid;
+	height: 250px;
+	width: 100%;
+	display: none;
+}
+
+#match-movie button {
+	background-color: yellow;
+	margin-top: 100px; /*Coloquei essa margem porque a nav cobre o botão*/
 }

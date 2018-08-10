@@ -12,8 +12,17 @@ $(document).ready(function(){
 
 	$('.btn-back').click( function(){ 
 		$('main').css("display","block"); 
-		$('#match-movie').css("display","none"); 
+		$('#match-movie').css("display","none");
+		$('#my-movie-list').css("display","none"); 
+		$('#friends-movie-list').css("display","none"); 	
 	});
+
+	$('.list-name').click( function(){ 
+		$('main').css("display","none"); 
+		$('#friends-movie-list').css("display","none"); 	
+		$('#my-movie-list').css("display","flex"); 
+	});
+
 
 })
 

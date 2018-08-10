@@ -14,21 +14,21 @@
       <img class="logo" src="">
       <h1 class="">matchMovie</h1>
   	</section>
-    <section id="main"> 
+    <section id="main">
 
       <!--incluir logo Marcia-->
       <nav class="navbar navbar-expand-lg bg-info navbar-light text-light fixed-top">
         <div class="container">
-          <a class="navbar-brand text-uppercase " href="#">MatchMovie</a>
+          <img id="img-logo" src="assets/images/logo.png">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-           </button>      
+          </button>
         </div>
       </nav>
       <main>
         <div class="profile">
-          <img src="assets/images/leia.png" height="100px" item-width="100px" />
-          <span class="name"> Joaquina </span>
+          <img src="assets/images/leia.png" height="150px" item-width="150px" />
+          <span class="name">Bem-vinda Joaquina!</span>
         </div>
         <div class='btns'>
      	    <button class='list-name' type="button">Sua Lista</button>
@@ -42,20 +42,26 @@
             <img id="geoconda" src="assets/images/ww.png" height="150px" width="150px">
           </div>
           <button id='btn-match' type='button'>MATCH</button>
-        </div>    
+        </div>
       </main>
-      <div id="match-movie">
-      	<!--Aqui é mostrado o resultado do match -->
-        <button class="btn-back">Voltar</button>   
-      </div>
-      <div id="my-movie-list">
-      	<!--Aqui é mostrado o resultado do match -->
-        <button class="btn-back">Voltar</button>   
-      </div>
-      <div id="friends-movie-list">
-      	<!--Aqui é mostrado o resultado do match -->
-        <button class="btn-back">Voltar</button>   
-      </div>
+
+      <div id="list-movie">
+        <div id="match-movie">
+        	<!--Aqui é mostrado o resultado do match -->
+          <button class="btn-back">Voltar</button>
+        </div>
+        <div id="my-movie-list">
+        	<!--Aqui é mostrado o resultado do match -->
+          <button class="btn-back">Voltar</button>
+        </div>
+        <div id="friends-movie-list">
+        	<!--Aqui é mostrado o resultado do match -->
+          <button class="btn-back">Voltar</button>
+        </div>
+        <div id="friend-page">
+
+        </div>
+    </div>
 
       <!-- Modal -->
       <div class="modal hide" tabindex="-1" role="dialog" id="info-modal">
@@ -76,7 +82,7 @@
           </div>
         </div>
       </div>
-       
+
     </section>
    	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" crossorigin="anonymous"></script>

@@ -8,14 +8,19 @@ body {
 
 h1 {
   text-align: center;
-  font-size: 100px;   
+  font-size: 100px;
+}
+
+#img-logo {
+  height: 90px;
+  width: 170px;
 }
 
 #splash {
 	height: 100%;
 	width: 100%;
 	position: absolute;
-	background-color: yellow;	
+	background-color: yellow;
 	display: none; /*TIRAR essa linha na versao FINAL*/
 }
 
@@ -29,14 +34,14 @@ main {
 
 /* div profile */
 .profile {
-	margin-top: 10vh;
+	margin-top: 15vh;
 	display: flex;
 	margin-left: 12px;
 	padding: 18px;
 }
 
 .name {
-	font-size: 20px;
+	font-size: 30px;
 	font-style: italic;
 	padding: 20px;
 }
@@ -44,8 +49,8 @@ main {
 /* div com botao de amigos e sua lista */
 .list-name, .your-friends {
 	background-color: #00D9FF;
-  padding: 10px;
-	border-radius: 5px;
+  padding: 20px;
+	border-radius: 15px;
 	font-size: 20px;
 	color: white;
 	margin: 10px;
@@ -73,11 +78,17 @@ main {
   padding: 10px;
 	font-size: 25px;
 	color: white;
+
+
+#list-movie{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  grid-gap: 10px;
 }
 
 #match-movie {
-	height: 250px;
-	width: 100%;
+  height: 250px;
 	display: none;
 }
 

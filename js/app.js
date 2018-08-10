@@ -31,9 +31,8 @@ $(document).ready(function(){
 
 	$('#geoconda').click( function(){ 
 		$('main').css("display","none"); 
-		$('#friends-movie-list').css("display","none"); 	
+		$('#friends-movie-list').css("display","flex"); 	
 		$('#my-movie-list').css("display","none");
-		$('#friend-page').css("display","flex");
 	});
 })
 

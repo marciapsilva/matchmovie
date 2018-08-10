@@ -7,13 +7,13 @@ body{
 h1{
     text-align: center;
     font-size: 100px;
-    
+
 }
 #splash {
 	height: 100%;
 	width: 100%;
 	position: absolute;
-	background-color: yellow;	
+	background-color: yellow;
 	display: none; /*TIRAR essa linha na versao FINAL*/
 }
 main {
@@ -67,7 +67,7 @@ main{
 h1{
     text-align: center;
     font-size: 100px;
-    
+
 }
 #btn-match{
 	background-color: #FF7300;

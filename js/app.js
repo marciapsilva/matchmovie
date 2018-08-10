@@ -5,6 +5,8 @@ $(document).ready(function(){
 	$('#btn-match').click( function(){ 
 		$('#match-movie').css("display","block"); 	
 		$('main').css("display","none");
+		$('#friend-page').css("display","none");
+
 		clearResultsDiv();
 		showMoviesPosters(matchResult);
 	});
@@ -14,16 +16,25 @@ $(document).ready(function(){
 		$('main').css("display","block"); 
 		$('#match-movie').css("display","none");
 		$('#my-movie-list').css("display","none"); 
-		$('#friends-movie-list').css("display","none"); 	
+		$('#friends-movie-list').css("display","none");
+		$('#friend-page').css("display","none");
+ 	
 	});
 
 	$('.list-name').click( function(){ 
 		$('main').css("display","none"); 
 		$('#friends-movie-list').css("display","none"); 	
-		$('#my-movie-list').css("display","flex"); 
+		$('#my-movie-list').css("display","flex");
+		$('#friend-page').css("display","none");
+ 
 	});
 
-
+	$('#geoconda').click( function(){ 
+		$('main').css("display","none"); 
+		$('#friends-movie-list').css("display","none"); 	
+		$('#my-movie-list').css("display","none");
+		$('#friend-page').css("display","flex");
+	});
 })
 
 function splash(){

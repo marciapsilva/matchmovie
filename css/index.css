@@ -1,14 +1,16 @@
 *{
-    margin: 0;
+  margin: 0;
 }
-body{
-    max-height: 100vh;
+
+body {
+  max-height: 100vh;
 }
-h1{
-    text-align: center;
-    font-size: 100px;
-    
+
+h1 {
+  text-align: center;
+  font-size: 100px;   
 }
+
 #splash {
 	height: 100%;
 	width: 100%;
@@ -16,12 +18,13 @@ h1{
 	background-color: yellow;	
 	display: none; /*TIRAR essa linha na versao FINAL*/
 }
+
 main {
 	border: solid;
 }
 
-main{
-	width: 100%;
+main {
+  width: 100%;
 	position: absolute;
 	/*display: none;  ALTERAR NA VERSAO FINAÇ*/
 	background-color: #f5f5f5;
@@ -29,20 +32,21 @@ main{
 }
 
 /* div profile */
-.profile{
+.profile {
 	margin-top: 10vh;
 	display: flex;
 	margin-left: 12px;
 	padding: 18px;
 }
-.name{
+
+.name {
 	font-size: 20px;
 	font-style: italic;
 	padding: 20px;
 }
 
 /* div com botao de amigos e sua lista */
-.list-name, .your-friends{
+.list-name, .your-friends {
 	background-color: #00D9FF;
     padding: 10px;
 	border-radius: 5px;
@@ -51,33 +55,36 @@ main{
 	margin: 10px;
 	border: none;
 }
-.btns{
+
+.btns {
 	display: grid;
 	justify-content: space-around;
 	padding: 50px;
 }
 
 /* section com amigos proximos */
-.close-friends{
+.close-friends {
 	display: grid;
     justify-content: center;
 	grid-template-rows: 60px 200px 70px;
 	padding: 20px;
 }
-h1{
-    text-align: center;
-    font-size: 100px;
-    
+
+h1 {
+  text-align: center;
+  font-size: 100px; 
 }
-#btn-match{
+
+#btn-match {
 	background-color: #FF7300;
 	size: 30px;
 	border-radius: 5px;
-    padding: 10px;
+  padding: 10px;
 	font-size: 25px;
 	color: white;
 }
-#match-movie{
+
+#match-movie {
 	border: solid;
 	height: 250px;
 	width: 100%;
@@ -87,4 +94,17 @@ h1{
 #match-movie button {
 	background-color: yellow;
 	margin-top: 100px; /*Coloquei essa margem porque a nav cobre o botão*/
+}
+
+.modal-title {
+  color: #FF7300;
+  font-weight: bold;
+}
+
+.modal-body {
+	display: flex;
+}
+
+.modal-description {
+	margin: 10px;
 }

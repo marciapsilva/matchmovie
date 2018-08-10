@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	//splash();
+	splash();
 	//setDisplayFlex();  //
 
 	$('#btn-match').click( function(){ 
@@ -38,8 +38,8 @@ $(document).ready(function(){
 })
 
 function splash(){
-	$('#splash').delay(2000).fadeOut(500);  	
-  $('#main').delay(3000).fadeIn(500);
+	$('#splash').delay(2000).fadeOut('slow');  	
+  $('#main').delay(2000).fadeIn('slow');
 }
 
 function setDisplayFlex(){

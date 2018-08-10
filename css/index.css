@@ -78,7 +78,6 @@ h1{
 	color: white;
 }
 #match-movie{
-	border: solid;
 	height: 250px;
 	width: 100%;
 	display: none;
@@ -87,4 +86,14 @@ h1{
 #match-movie button {
 	background-color: yellow;
 	margin-top: 100px; /*Coloquei essa margem porque a nav cobre o botão*/
+}
+
+#my-movie-list{
+	display: none;
+	background-color: orange;
+}
+
+#friends-movie-list{
+	display: none;
+	background-color: pink;
 }

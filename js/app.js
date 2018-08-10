@@ -164,7 +164,7 @@ function showMyFriendsMovies(array) {
       var posterContainer = document.createElement('div');
       var posterImg = response.poster_path;
       /* var imgTag = '<img class="" src="https://image.tmdb.org/t/p/w100_and_h100_bestv2/' + posterImg + '">'; */
-      var imgTag = $('<img>').attr('src', 'https://image.tmdb.org/t/p/w100_and_h100_bestv2/' + posterImg).addClass('my-movie-row-poster').data(response);
+      var imgTag = $('<img>').attr('src', 'https://image.tmdb.org/t/p/w100_and_h100_bestv2/' + posterImg).addClass('my-friend-movie-row-poster').data(response);
       $(posterContainer).append(imgTag);
       $('#friends-movie-list').append(posterContainer);
       modalContent();
